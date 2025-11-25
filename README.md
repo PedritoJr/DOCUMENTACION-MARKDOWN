@@ -1,403 +1,72 @@
 # Tecnológico de Software
 ## Materia: Fundamentos de álgebra
 ## Alumno: Pedro Alfredo Cardeña Quijano
-## Actividad \#16 - documentación de Matrices 
+## Actividad \#20 - documentación de Matrices 
+
+# pedro alfredo cardeña quijano
+# 1-A 25/11/25
+# Fundamentos de Algebra
+# Act 20
+
+
+## Objetivo
+El propósito de esta actividad es trabajar con matrices dentro de Excel, representando imágenes mediante números, y aplicar operaciones fundamentales de álgebra lineal como:
+
+- Transposición  
+- Suma  
+- Resta  
 
 ---
-### Identificación de matrices
 
-# Ejercicio 1: Clasificar matrices
-  ### Identifica el tipo de cada matriz:
-  
-  La matriz $A$ es una matriz cuadrada de 2x2. *Matriz identidad*
-  
-  $$ A =
-  \begin{pmatrix}
-  1 & 0 \\
-  0 & 1 \\
-  \end{pmatrix}
-  $$
-  
-  
-  La matriz $B$ es una matriz cuadrada de 3x3.
-  
-  
-  $$ B =
-  \begin{pmatrix}
-  3 & 0 & 0 \\
-  0 & -2 & 0 \\
-  0 & 0 & 5 \\
-  \end{pmatrix}
-  $$
-  
-  La matriz $C$ es una *Matriz cuadrada* 
-  
-  $$ C =
-  \begin{pmatrix}
-  2 & 1 & 4 \\
-  1 & 3 & 5 \\
-  4 & 5 & 6 \\
-  \end{pmatrix}
-  $$
-  
-  La matriz $D$ es una matriz cuadrada de 3x3. Esta es una *Matriz triangular superior*,
-  
-  $$ D =
-  \begin{pmatrix}
-  1 & 2 & 3 \\
-  0 & 4 & 5 \\
-  0 & 0 & 6 \\
-  \end{pmatrix}
-  $$
+## Programación de la hoja de Excel
+
+### 1. Diseño de las matrices (imágenes pixeladas)
+Cada matriz fue creada manualmente en una hoja distinta de Excel
+
+El usuario puede aplicar Formato condicional para colorear cada valor siguiendo esta ruta:
+
+Inicio → Formato condicional → Nueva regla → Formato de celdas que contengan
 
 
-# Ejercicio 2: Operaciones Básicas
-  ### Dadas las siguientes Matrices: 
-  
-  
-  
-  $$
-  A =
-  \begin{pmatrix}
-  2 & -1 \\
-  3 & 4
-  \end{pmatrix}
-  $$
-  $$ 
-  B =
-  \begin{pmatrix}
-  5 & 2 \\
-  -1 & 3
-  \end{pmatrix}
-  $$
-  
-  ### Suma de A + B
-  
-  $$
-  A + B =
-  \begin{pmatrix}
-  2 & -1 \\
-  3 & 4
-  \end{pmatrix}
-  +
-  \begin{pmatrix}
-  5 & 2 \\
-  -1 & 3
-  \end{pmatrix}
-  $$
-  
-  $$
-  A + B =
-  \begin{pmatrix}
-  2 + 5 & -1 + 2 \\
-  3 + (-1) & 4 + 3
-  \end{pmatrix}
-  $$
-  
-  $$
-  A + B =
-  \begin{pmatrix}
-  7 & 1 \\
-  2 & 7
-  \end{pmatrix}
-  $$
-  
-  
-  ### 2A - B
-  
-  $$
-  2A = 2 \begin{pmatrix}
-  2 & -1 \\
-  3 & 4
-  \end{pmatrix}
-  = \begin{pmatrix}
-  2 \cdot 2 & 2 \cdot (-1) \\
-  2 \cdot 3 & 2 \cdot 4
-  \end{pmatrix}
-  $$
-  
-  $$
-  2A =
-  \begin{pmatrix}
-  4 & -2 \\
-  6 & 8
-  \end{pmatrix}
-  $$
-  
-  $$
-  2A - B = 
-  \begin{pmatrix}
-  4 & -2 \\
-  6 & 8
-  \end{pmatrix} -
-  \begin{pmatrix}
-  5 & 2 \\
-  -1 & 3
-  \end{pmatrix}
-  $$
-  
-  $$
-  2A - B =
-  \begin{pmatrix}
-  4 - 5 & -2 - 2 \\
-  6 - (-1) & 8 - 3
-  \end{pmatrix}
-  $$
-  
-  $$
-  2A - B =
-  \begin{pmatrix}
-  -1 & -4 \\
-  7 & 5
-  \end{pmatrix}
-  $$
-  
-  ### AB
-  
-  $$
-  A \times B =
-  \begin{pmatrix}
-  2 & -1 \\
-  3 & 4
-  \end{pmatrix}
-  \begin{pmatrix}
-  5 & 2 \\
-  -1 & 3
-  \end{pmatrix}
-  $$
-  
-  $$
-  A \times B =
-  \begin{pmatrix}
-  (2)(5) + (-1)(-1) & (2)(2) + (-1)(3) \\
-  (3)(5) + (4)(-1) & (3)(2) + (4)(3)
-  \end{pmatrix}
-  $$
-  
-  $$
-  A \times B =
-  \begin{pmatrix}
-  10 + 1 & 4 + (-3) \\
-  15 + (-4) & 6 + 12
-  \end{pmatrix}
-  $$
-  
-  $$
-  A \times B =
-  \begin{pmatrix}
-  11 & 1 \\
-  11 & 18
-  \end{pmatrix}
-  $$
-  
-  
-  ### BA
-  
-  $$
-  B \times A =
-  \begin{pmatrix}
-  5 & 2 \\
-  -1 & 3
-  \end{pmatrix}
-  \begin{pmatrix}
-  2 & -1 \\
-  3 & 4
-  \end{pmatrix}
-  $$
-  
-  
-  $$
-  B \times A =
-  \begin{pmatrix}
-  (5)(2) + (2)(3) & (5)(-1) + (2)(4) \\
-  (-1)(2) + (3)(3) & (-1)(-1) + (3)(4)
-  \end{pmatrix}
-  $$
-  
-  $$
-  B \times A =
-  \begin{pmatrix}
-  10 + 6 & -5 + 8 \\
-  -2 + 9 & 1 + 12
-  \end{pmatrix}
-  $$
-  
-  $$
-  B \times A =
-  \begin{pmatrix}
-  16 & 3 \\
-  7 & 13
-  \end{pmatrix}
-  $$
-  
-  
-  ###  $A^T$ 
-  
-  $$
-  A =
-  \begin{pmatrix}
-  2 & -1 \\
-  3 & 4
-  \end{pmatrix}
-  $$  
-  
-  $$
-  A^T =
-  \begin{pmatrix}
-  2 & 3 \\
-  -1 & 4
-  \end{pmatrix}
-  $$ 
+Asignando un color diferente para cada número.
 
-  # Ejercicio 3: Multiplicacion en Cadena
-  
-    
-  $$
-  A = \begin{pmatrix}
-  1 & 2 \\
-  3 & 4
-  \end{pmatrix},
-  \quad
-  B = \begin{pmatrix}
-  2 & 0 \\
-  1 & 3
-  \end{pmatrix},
-  \quad
-  C = \begin{pmatrix}
-  1 & 1 \\
-  0 & 2
-  \end{pmatrix}
-  $$
-  
-  
-  
-  $$
-  AB =
-  \begin{pmatrix}
-  1 & 2 \\
-  3 & 4
-  \end{pmatrix}
-  \begin{pmatrix}
-  2 & 0 \\
-  1 & 3
-  \end{pmatrix}
-  $$
-  
-  $$
-  AB =
-  \begin{pmatrix}
-  (1)(2) + (2)(1) & (1)(0) + (2)(3) \\
-  (3)(2) + (4)(1) & (3)(0) + (4)(3)
-  \end{pmatrix}
-  $$
-  
-  $$
-  AB =
-  \begin{pmatrix}
-  4 & 6 \\
-  10 & 12
-  \end{pmatrix}
-  $$
-  
-  $$
-  (AB)C =
-  \begin{pmatrix}
-  4 & 6 \\
-  10 & 12
-  \end{pmatrix}
-  \begin{pmatrix}
-  1 & 1 \\
-  0 & 2
-  \end{pmatrix}
-  $$
-  
-  $$
-  (AB)C =
-  \begin{pmatrix}
-  (4)(1) + (6)(0) & (4)(1) + (6)(2) \\
-  (10)(1) + (12)(0) & (10)(1) + (12)(2)
-  \end{pmatrix}
-  $$
-  
-  $$
-  (AB)C =
-  \begin{pmatrix}
-  4 & 16 \\
-  10 & 34
-  \end{pmatrix}
-  $$
-  
-  
-  $$
-  BC =
-  \begin{pmatrix}
-  2 & 0 \\
-  1 & 3
-  \end{pmatrix}
-  \begin{pmatrix}
-  1 & 1 \\
-  0 & 2
-  \end{pmatrix}
-  $$
-  
-  $$
-  BC =
-  \begin{pmatrix}
-  (2)(1) + (0)(0) & (2)(1) + (0)(2) \\
-  (1)(1) + (3)(0) & (1)(1) + (3)(2)
-  \end{pmatrix}
-  $$
-  
-  $$
-  BC =
-  \begin{pmatrix}
-  2 & 2 \\
-  1 & 7
-  \end{pmatrix}
-  $$
-  
-  
-  
-  $$
-  A(BC) =
-  \begin{pmatrix}
-  1 & 2 \\
-  3 & 4
-  \end{pmatrix}
-  \begin{pmatrix}
-  2 & 2 \\
-  1 & 7
-  \end{pmatrix}
-  $$
-  
-  $$
-  A(BC) =
-  \begin{pmatrix}
-  (1)(2) + (2)(1) & (1)(2) + (2)(7) \\
-  (3)(2) + (4)(1) & (3)(2) + (4)(7)
-  \end{pmatrix}
-  $$
-  
-  $$
-  A(BC) =
-  \begin{pmatrix}
-  4 & 16 \\
-  10 & 34
-  \end{pmatrix}
-  $$
-  
-  
-  
-  $$
-  (AB)C = A(BC) =
-  \begin{pmatrix}
-  4 & 16 \\
-  10 & 34
-  \end{pmatrix}
-  $$
+---
+
+### 2. Transposición de las matrices
+
+Para cada matriz original (ejemplo: en la hoja Matriz1), se generó su transpuesta en otra hoja (Matriz1_T).
+
+Para transponer una matriz completa se utilizó la función:
+
+excel
+=TRANSPONER(Matriz1!A1:AD30)
+
+---
+
+### 3. Suma de matrices
+
+La suma se realizó seleccionando las dos matrices originales (por ejemplo, Matriz1 y Matriz2) con:
+excel
+=Matriz1!A1 + Matriz2!A1
 
 
+---
+
+### 4. Resta de matrices
+
+Para calcular la diferencia entre dos matrices:
+
+excel
+=Matriz1!A1 - Matriz2!A1
 
 
+---
+
+### 5. Multiplicación escalar
+
+Para multiplicar una matriz por un número (ejemplo: 3), en una nueva hoja se usó:
+
+excel
+=Matriz1!A1 * 3
 
 
